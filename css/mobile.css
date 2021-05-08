@@ -1,0 +1,9 @@
+@media screen and (max-width: 414px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  nav ul {
+    display: none;
+  }
+}

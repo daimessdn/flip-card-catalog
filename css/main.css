@@ -182,16 +182,26 @@ main > h1, main > h2 {
   z-index: 100;
 }
 
-.description-explainer h1 {
+.item-name {
+  display: block;
   margin: 0;
   line-height: 1;
-  font-size: 1.2em;
+  font-size: 1.3em;
+
+  float: left;
 }
 
-.description-explainer h2 {
+.item-price {
+  display: block;
   margin: 0;
   line-height: 1;
-  font-size: 1em;
+  font-size: 1.3em;
+
+  float: right;
+}
+
+.clear {
+  clear: both;
 }
 
 .description-explainer p {
