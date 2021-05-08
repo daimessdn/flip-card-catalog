@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+#item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  width: 300px;
+  height: 300px;
+
+  margin: 10px;
+
+  position: relative;
+
+  background-position: center;
+
+  transform-style: preserve-3d;
+
+  perspective: 600px;
+}
+
+.description:hover .description-front {
+  transform: rotateY(180deg);
+}
+
+.description:hover .description-back {
+  transform: rotateY(0deg);
+}
+
+.description:hover .description-back * {
+  opacity: 1;
+}
+
+.description:hover .description-explainer {
+  top: calc(100% + 10px);
+  box-shadow: 3px 2px 1px rgba(0,0,0,1);
+
+  margin: 0;
+}
+
+.description-front, .description-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 1px solid #000;
+  border-radius: 1em;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+
+  transition: 1s;
+}
+
+.description-front {
+  transform-origin: center;
+  transform: rotateX(0deg);
+}
+
+.description-back {
+  background: #e2a121;
+  transform-origin: center;
+  transform: rotateY(-180deg);
+
+  color: #fff;
+
+  * {
+    opacity: 0;
+  }
+}
+
+.description-explainer {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  margin: 1em;
+
+  width: 100%;
+
+  border: 1px solid #000;
+
+  box-shadow: none;
+
+  height: 100px;
+
+  border-radius: 1em;
+
+  transition-duration: 1s;
+
+  position: absolute;
+  top: calc(100% - 120px);
+  left: 0;
+}
+
+.description-explainer h1 {
+  margin: 0;
+  line-height: 1;
+  font-size: 1.3em;
+}
+
+.description-explainer h2 {
+  margin: 0;
+  line-height: 1;
+  font-size: 1.2em;
+}
+
+.description-explainer p {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 1em;
+}
+
+#sepatu-1 {
+  background-image: url("../img/sepatu1.jpg");
+  background-size: contain;
+}
+
+#sepatu-1b {
+  background-image: url("../img/sepatu1b.jpg");
+  background-size: contain;
+}
+
+#sepatu-2 {
+  background-image: url("../img/sepatu2.jpg");
+  background-size: contain;
+}
+
+#sepatu-2b {
+  background-image: url("../img/sepatu2b.jpg");
+  background-size: contain;
+}
+
+
+#sepatu-3 {
+  background-image: url("../img/sepatu3.jpg");
+  background-size: contain;
+}
+
+#sepatu-3b {
+  background-image: url("../img/sepatu3b.jpg");
+  background-size: contain;
+}
