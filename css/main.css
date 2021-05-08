@@ -41,10 +41,8 @@ body {
 }
 
 .description:hover .description-explainer {
-  top: calc(100% + 10px);
+  top: calc(100% - 100px);
   box-shadow: 3px 2px 1px rgba(0,0,0,1);
-
-  margin: 0;
 }
 
 .description-front, .description-back {
@@ -61,6 +59,8 @@ body {
   height: 100%;
 
   padding: 10px;
+
+  overflow: hidden;
 
   transition: 1s ease;
 }
@@ -86,9 +86,7 @@ body {
   padding: 10px;
   background-color: #fff;
   color: #000;
-  margin: 1em;
-
-  width: 100%;
+  margin: 0;
 
   border: 1px solid #000;
 
@@ -100,9 +98,11 @@ body {
 
   transition: 1s ease;
 
-  position: absolute;
-  top: calc(100% - 120px);
+  position: relative;
+  top: 100%;
   left: 0;
+
+  z-index: 100;
 }
 
 .description-explainer h1 {
@@ -142,7 +142,6 @@ body {
   background-image: url("../img/sepatu2b.jpg");
   background-size: contain;
 }
-
 
 #sepatu-3 {
   background-image: url("../img/sepatu3.jpg");
