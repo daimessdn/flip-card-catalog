@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 #item-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
 }
 
 .description {
@@ -108,18 +110,18 @@ body {
 .description-explainer h1 {
   margin: 0;
   line-height: 1;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .description-explainer h2 {
   margin: 0;
   line-height: 1;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .description-explainer p {
   margin: 0;
-  line-height: 1.3;
+  line-height: 1.2;
   font-size: 1em;
 }
 
