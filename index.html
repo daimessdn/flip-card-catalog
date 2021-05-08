@@ -11,22 +11,28 @@
 <body>
   <!-- navbar -->
   <nav class="container">
+    <div id="nav-brand">
+      <img src="img/steps-logo.svg" alt="steps" />
+    </div>
+
     <ul>
       <li class="nav-item">Home</li>
       <li class="nav-item">Products</li>
       <li class="nav-item">Blog</li>
+      <li class="nav-item">Contact</li>
     </ul>
   </nav>
 
   <main class="container">
-    <h1>Hover me to see the item description.</h1>
+    <h1>Recommended shoes</h1>
+    <h2>Check out these recommended foot gears.</h2>
 
     <section id="item-container">
       <div class="description">
         <div class="description-back" id="sepatu-1b">
           <div class="description-explainer">
-            <h1>adidas Ultraboost 4.0</h1>
-            <h2>$56.78</h2>
+            <h1 class="item-name">adidas Ultraboost 4.0</h1>
+            <h2 class="item-price">$56.78</h2>
             <p>Compatible for jogging, comfortable to use.</p>
           </div>
         </div>
@@ -37,8 +43,8 @@
       <div class="description">
         <div class="description-back" id="sepatu-2b">
           <div class="description-explainer">
-            <h1>adidas Ultraboost 20</h1>
-            <h2>$20.20</h2>
+            <h1 class="item-name">adidas Ultraboost 20</h1>
+            <h2 class="item-price">$20.20</h2>
             <p>Unique sole, Parley Ocean Plastic running shoes.</p>
           </div>
         </div>
@@ -49,8 +55,8 @@
       <div class="description">
         <div class="description-back" id="sepatu-3b">
           <div class="description-explainer">
-            <h1>Nike Zoom Fly 3</h1>
-            <h2>$20.21</h2>
+            <h1 class="item-name">Nike Zoom Fly 3</h1>
+            <h2 class="item-price">$20.21</h2>
             <p>Carbon-fiber running shoes.</p>
           </div>
         </div>
@@ -61,5 +67,8 @@
   </main>
 
   <footer></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="js/gsap.js"></script>
 </body>
 </html>
