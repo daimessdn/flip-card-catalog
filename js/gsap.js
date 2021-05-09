@@ -1,5 +1,5 @@
 gsap.from("#nav-brand", {
-  duration: 1,
+  duration: 1.5,
   opacity: 0
 });
 
@@ -27,7 +27,7 @@ gsap.from("main > h2", {
   delay: 1.2
 });
 
-gsap.from(".description", {
+gsap.from(".shoes", {
   duration: 1,
   opacity: 0,
   y: 100,

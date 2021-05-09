@@ -93,7 +93,7 @@ main > h1, main > h2 {
   justify-content: center;
 }
 
-.description {
+.shoes {
   width: 300px;
   height: 300px;
 
@@ -108,23 +108,23 @@ main > h1, main > h2 {
   perspective: 600px;
 }
 
-.description:hover .description-front {
+.shoes:hover .shoes-front {
   transform: rotateY(180deg);
 }
 
-.description:hover .description-back {
+.shoes:hover .shoes-back {
   transform: rotateY(0deg);
 }
 
-.description:hover .description-back * {
+.shoes:hover .shoes-back * {
   opacity: 1;
 }
 
-.description:hover .description-explainer {
+.shoes:hover .shoes-explainer {
   top: calc(100% - 100px);
 }
 
-.description-front, .description-back {
+.shoes-front, .shoes-back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
@@ -144,12 +144,12 @@ main > h1, main > h2 {
   transition: 1s ease;
 }
 
-.description-front {
+.shoes-front {
   transform-origin: center;
   transform: rotateX(0deg);
 }
 
-.description-back {
+.shoes-back {
   background: #e2a121;
   transform-origin: center;
   transform: rotateY(-180deg);
@@ -161,7 +161,7 @@ main > h1, main > h2 {
   }
 }
 
-.description-explainer {
+.shoes-explainer {
   padding: 10px;
   background-color: #fff;
   color: #000;
@@ -204,7 +204,7 @@ main > h1, main > h2 {
   clear: both;
 }
 
-.description-explainer p {
+.shoes-explainer p {
   margin: 0;
   line-height: 1.2;
   font-size: 1em;
